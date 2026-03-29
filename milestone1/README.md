@@ -69,7 +69,6 @@ scripts/check_data.py
 
 
 ---
-
 ## ⚙️ How to Run
 
 Navigate to the scripts folder:
@@ -82,23 +81,16 @@ Run the scripts in order:
 python create_tables.py
 python load_data.py
 python check_data.py
-
 📂 Folder Structure
 milestone1/
 │── scripts/
 │   ├── create_tables.py
 │   ├── load_data.py
 │   └── check_data.py
-│── README.md```
-
+│── README.md
+```
 ---
-
-`## 🏁 Conclusion`
+## Conclusion
 
 Milestone 1 successfully sets up the project environment and loads raw data into the SQLite database.
 The created tables serve as the foundation for data cleaning and transformation in Milestone 2.
-
-
----
-
-
