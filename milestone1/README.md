@@ -1,154 +1,113 @@
-# 📊 Infosys ETL Project (Milestones 1–3)
+# 📦 Milestone 1: Data Ingestion & Setup (Weeks 1–2)
+
+## 🎯 Objective
+The objective of Milestone 1 is to set up the project environment, create the database schema, and load raw CSV data into a SQLite database using Python scripts.  
+This forms the foundation for further data processing in upcoming milestones.
 
 ---
 
-## 📌 Project Overview
-This project implements a complete ETL (Extract, Transform, Load) pipeline using Python, SQLite, and Apache Airflow.
+## 🛠️ Tasks Implemented
 
-The project is divided into three milestones:
-- **Milestone 1:** Basic ETL (Manual Execution)
-- **Milestone 2:** Data Cleaning & Transformation
-- **Milestone 3:** ETL Automation using Airflow
+### ✅ 1. Project Setup
+- Created project folder structure  
+- Organized scripts inside a `scripts/` folder  
+- Set up Python environment and required libraries  
 
----
+### ✅ 2. Database Creation
+- Created SQLite database (`infosys.db`)  
+- Defined schema for raw tables  
+- Tables created:
+  - `orders`  
+  - `order_details`  
+  - `sales_target`  
 
-## 🧩 Tech Stack
-- Python
-- Pandas
-- SQLite
-- Apache Airflow
-
----
-
-## 📂 Repository Structure
-
-
-.
-├── milestone1/
-├── milestone2/
-├── milestone3/
-├── presentation/
-├── agile/
-└── README.md
-
+### ✅ 3. Data Ingestion
+- Loaded raw CSV files into SQLite database  
+- Used Python (Pandas + SQLite) for ingestion  
+- Ensured proper column mapping and data loading  
 
 ---
 
-## 🔹 Milestone 1 – Basic ETL
-- Created database tables
-- Loaded data from CSV files
-- Validated data using SQL queries
-- Executed scripts manually
+## 📌 Scripts Used
+All ingestion logic is implemented inside:
 
-📁 Includes:
-- Python scripts
-- Outputs (screenshots)
-- Documentation
+
+scripts/
+
 
 ---
 
-## 🔹 Milestone 2 – Data Cleaning & Transformation
-- Cleaned raw data
-- Converted date formats
-- Removed duplicates and null values
-- Standardized text and numeric fields
+## 📌 Raw Data Files
+The following CSV files are used as input:
 
-📁 Includes:
-- Transformation scripts
-- Cleaned dataset outputs
-- Documentation
+- `orders.csv`  
+- `order_details.csv`  
+- `sales_target.csv`  
 
 ---
 
-## 🔹 Milestone 3 – Airflow Automation
-- Created DAG for ETL pipeline
-- Automated execution using scheduling
-- Implemented logging
-- Configured email alerts for failures
+## 📌 Tables Created
+After execution, the following tables are created:
 
-📁 Includes:
-- Airflow DAG file
-- Logs and outputs
-- Screenshots of Airflow UI
-- Documentation
+- `orders`  
+- `order_details`  
+- `sales_target`  
+
+---
+
+## 🧪 Testing & Validation
+The ingestion process was validated by:
+
+- Verifying table creation  
+- Checking row counts after data loading  
+- Ensuring correct data insertion  
+
+Validation script:
+
+
+scripts/check_data.py
+
 
 ---
 
 ## ⚙️ How to Run
 
-### Step 1: Clone Repository
+Navigate to the scripts folder:
 
-git clone <your-repo-link>
-cd <repo-name>
-
-
----
-
-### Step 2: Run Milestone 1
-
+```bash
 cd milestone1/scripts
+
+Run the scripts in order:
+
 python create_tables.py
 python load_data.py
 python check_data.py
 
+📂 Folder Structure
+milestone1/
+│── scripts/
+│   ├── create_tables.py
+│   ├── load_data.py
+│   └── check_data.py
+│── README.md
+
+** 🏁 Conclusion**
+
+Milestone 1 successfully sets up the project environment and loads raw data into the SQLite database.
+The created tables serve as the foundation for data cleaning and transformation in Milestone 2.
+
 
 ---
 
-### Step 3: Run Milestone 2
-
-cd milestone2/scripts
-python transform_data.py
-
-
----
-
-### Step 4: Run Milestone 3 (Airflow)
-- Start Airflow services
-- Place DAG file in Airflow DAGs folder
-- Trigger DAG from Airflow UI
+# ✅ Why this works
+✔ Proper markdown headings  
+✔ Correct spacing for GitHub preview  
+✔ Code blocks render correctly  
+✔ Matches your Milestone 2 style  
 
 ---
 
-## 📸 Outputs
-- Screenshots of execution
-- Airflow DAG runs
-- Dataset outputs
-
----
-
-## 📢 Alerts & Logging
-- Logging implemented in all scripts
-- Airflow configured to send email alerts on task failure
-
----
-
-## 📑 Documentation
-Each milestone contains detailed documentation explaining:
-- Implementation steps
-- Code logic
-- Outputs
-
----
-
-## 📊 Final Deliverables
-- ETL Pipeline (Manual + Automated)
-- Documentation for all milestones
-- Presentation (PPT)
-- Agile Template
-
----
-
-## 👥 Team Members
-- Member 1  
-- Member 2  
-- Member 3  
-
----
-
-## 📄 License
-This project is licensed under the MIT License.
-
----
-
-## 🎯 Conclusion
-This project demonstrates the complete lifecycle of an ETL pipeline, from manual execution to full aut
+If you want next 🚀  
+I can:
+- Convert **all milestones into one main README (very important for final submission)**  
+- Or review your **GitHub repo structure for marks**
