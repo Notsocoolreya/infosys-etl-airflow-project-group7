@@ -91,7 +91,9 @@ milestone1/
 │   └── check_data.py
 │── README.md
 
-** 🏁 Conclusion**
+---
+
+## 🏁 Conclusion
 
 Milestone 1 successfully sets up the project environment and loads raw data into the SQLite database.
 The created tables serve as the foundation for data cleaning and transformation in Milestone 2.
@@ -99,15 +101,4 @@ The created tables serve as the foundation for data cleaning and transformation 
 
 ---
 
-# ✅ Why this works
-✔ Proper markdown headings  
-✔ Correct spacing for GitHub preview  
-✔ Code blocks render correctly  
-✔ Matches your Milestone 2 style  
 
----
-
-If you want next 🚀  
-I can:
-- Convert **all milestones into one main README (very important for final submission)**  
-- Or review your **GitHub repo structure for marks**
